@@ -32,7 +32,9 @@ Spoofing the license was way easier back in the days. But SketchApp license
 spoofing is also easy, it's just a matter of permissions. See, to use Sketch
 with fake license, all you have to do is replace some license information.
 
-There is a hidden file located in AppSupport folder:
+There is a hidden file located in AppSupport folder (an example of the file is
+in this repository too under the same name, but you have to edit yours to make
+it work):
 
 ```sh
 # Hidden .license file for SketchApp
