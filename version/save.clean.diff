@@ -1,0 +1,42 @@
+diff version/unzip/43-1/meta.json version/unzip/47-1/meta.json
+1,7c1,4
+< {  
+<    "appVersion":"43.1",
+<    "build":39012,
+<    "app":"com.bohemiancoding.sketch3",
+<    "pagesAndArtboards":{  
+<       "18D1FD02-FD9D-495C-A553-F174B9C89228":{  
+---
+> {
+>    "pagesAndArtboards":{
+>       "18D1FD02-FD9D-495C-A553-F174B9C89228":{
+9,11c6,8
+<          "artboards":{  
+<             "CF258A4E-74BC-4115-96DF-07E34704D6ED":{  
+<                "name":"Artboard_Sketch_43.1"
+---
+>          "artboards":{
+>             "CF258A4E-74BC-4115-96DF-07E34704D6ED":{
+>                "name":"Artboard_Sketch_47.1"
+---
+>    "compatibilityVersion":93,
+>    "created":{
+>       "appVersion":"47.1",
+>       "build":45422,
+21,25c26,28
+<       "variant":"NONAPPSTORE",
+<       "version":88
+---
+>       "compatibilityVersion":93,
+>       "version":95,
+>       "variant":"NONAPPSTORE"
+27,29c30,31
+<    "version":88,
+<    "saveHistory":[  
+<       "NONAPPSTORE.39012"
+---
+>    "saveHistory":[
+>       "NONAPPSTORE.45422"
+---
+>    "appVersion":"47.1",
+>    "build":45422

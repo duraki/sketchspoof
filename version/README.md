@@ -122,6 +122,11 @@ explain it like this, exactly! I'm reading and writing to see whats behind.*
 We took both saved file, one from version 43.1 and the other saved with version 
 47.1 (*at the time the latest version*) - the differences stayed almost same.
 
+Some differences may be seen if you look at `version/save.diff` and
+`version/save.clean.diff` which is a cleanup version of the first one.
+
+Each of these can be replaced. It's I guess our duty to found out either which
+PE function catch this on File open or bypass through linked file data.
 
 
 ## Outro
