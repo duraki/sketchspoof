@@ -4,10 +4,13 @@ For some specific* reason Sketch does not allow a file to open with (version)
 lower then currently used version to save file. I was simply interested what was
 behind all that specification, so the story.
 
-**Abstract**: We created two instances of save file from SketchApp and present
+**Abstract**: *We created two instances of save file from SketchApp and present
 their package model. Based on that we shall write a plugin that could allow
 import and export of based versions with a near distance diff. Our meta was
-generated through Sketch (v)43.1 and respective newest (v)47.1.
+generated through Sketch (v)43.1 and respective newest (v)47.1.*
+
+*specific reason is one who consists of magic, fog, SaaS or subscribtion
+based model, call it whatever you like, for an enduser*
 
 ## Introduction
 
@@ -128,7 +131,22 @@ Some differences may be seen if you look at `version/save.diff` and
 Each of these can be replaced. It's I guess our duty to found out either which
 PE function catch this on File open or bypass through linked file data.
 
+### Modular approach
+
+This vector should purpose of faking a current SketchApp version we talked
+previously, as a reminder: thats the one we saved the file in. In this example,
+it will be (v)47.1 as a major and higher one. 
+  
+Therefore our new **blob4-mod.sketch** is born.
+  
+It is a single file that should be allowed and enabled for use in older
+SketchApp version.
+  
+```sh
+$ file version/blob4-mod.sketch
+version/blob4-mod.sketch: Zip archive data, at least v2.0 to extract
+```
 
 ## Outro
 
-**THANKS TNT Team Edition <3**
+**Thanks TNT Edition <3**
