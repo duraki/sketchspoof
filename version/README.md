@@ -117,6 +117,12 @@ version/unzip/43-1/previews/preview.png: PNG image data, 400 x 400, 8-bit/color 
 *I just remembered I sometimes get questions how I get into all RE stuff. I can
 explain it like this, exactly! I'm reading and writing to see whats behind.*
 
+## Reversing meta
+
+We took both saved file, one from version 43.1 and the other saved with version 
+47.1 (*at the time the latest version*) - the differences stayed almost same.
+
+
 
 ## Outro
 

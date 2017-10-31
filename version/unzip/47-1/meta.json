@@ -1,1 +1,35 @@
-{"commit":"d5cff89adfb6ffc45ca7b7d58d65cada3f63f39a","pagesAndArtboards":{"18D1FD02-FD9D-495C-A553-F174B9C89228":{"name":"Page 1","artboards":{"CF258A4E-74BC-4115-96DF-07E34704D6ED":{"name":"Artboard_Sketch_47.1"}}}},"version":95,"fonts":[],"compatibilityVersion":93,"app":"com.bohemiancoding.sketch3","autosaved":1,"variant":"NONAPPSTORE","created":{"commit":"d5cff89adfb6ffc45ca7b7d58d65cada3f63f39a","appVersion":"47.1","build":45422,"app":"com.bohemiancoding.sketch3","compatibilityVersion":93,"version":95,"variant":"NONAPPSTORE"},"saveHistory":["NONAPPSTORE.45422"],"appVersion":"47.1","build":45422}
+{
+   "commit":"d5cff89adfb6ffc45ca7b7d58d65cada3f63f39a",
+   "pagesAndArtboards":{
+      "18D1FD02-FD9D-495C-A553-F174B9C89228":{
+         "name":"Page 1",
+         "artboards":{
+            "CF258A4E-74BC-4115-96DF-07E34704D6ED":{
+               "name":"Artboard_Sketch_47.1"
+            }
+         }
+      }
+   },
+   "version":95,
+   "fonts":[
+
+   ],
+   "compatibilityVersion":93,
+   "app":"com.bohemiancoding.sketch3",
+   "autosaved":1,
+   "variant":"NONAPPSTORE",
+   "created":{
+      "commit":"d5cff89adfb6ffc45ca7b7d58d65cada3f63f39a",
+      "appVersion":"47.1",
+      "build":45422,
+      "app":"com.bohemiancoding.sketch3",
+      "compatibilityVersion":93,
+      "version":95,
+      "variant":"NONAPPSTORE"
+   },
+   "saveHistory":[
+      "NONAPPSTORE.45422"
+   ],
+   "appVersion":"47.1",
+   "build":45422
+}
