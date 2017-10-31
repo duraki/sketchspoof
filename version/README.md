@@ -147,6 +147,55 @@ $ file version/blob4-mod.sketch
 version/blob4-mod.sketch: Zip archive data, at least v2.0 to extract
 ```
 
+### Catch
+
+The thing is, it's not worth it. The file is being compressed with other then
+zip flags so we should definitely check out what this archive start with. For
+that a good approach is to look through first bytes.
+
+```sh
+$ od -t x1 -N 10 version/blob43-1.sketch
+0000000    50  4b  03  04  14  00  02  00  08  00
+
+$ xxd -l 10 version/blob43-1.sketch
+00000000: 504b 0304 1400 0200 0800                 PK........
+```
+
+But if we try to open zipped file back in Sketch (for example - v43 save in v43
+app) we will be presented to error same or similar to this:
+
+hxxp://
+
+But further examination can show that both of these are with same files but
+different checksums:
+
+```sh
+$ unzip -v -l version/blob43-1.sketch
+Archive:  version/blob43-1.sketch
+ Length   Method    Size  Cmpr    Date    Time   CRC-32   Name
+--------  ------  ------- ---- ---------- ----- --------  ----
+     788  Defl:X      404  49% 00-00-1980 00:00 0dc8b716  document.json
+    1709  Defl:X      536  69% 00-00-1980 00:00 58a041e3  pages/18D1FD02-FD9D-495C-A553-F174B9C89228.json
+     166  Defl:X      143  14% 00-00-1980 00:00 37163421  user.json
+     554  Defl:X      297  46% 00-00-1980 00:00 af3619f9  meta.json
+    3678  Defl:N     3683  -0% 00-00-1980 00:00 ed995af0  previews/preview.png
+--------          -------  ---                            -------
+    6895             5063  27%                            5 files
+
+
+$ unzip -v -l 43-1zip.sketch
+Archive:  43-1zip.sketch
+ Length   Method    Size  Cmpr    Date    Time   CRC-32   Name
+--------  ------  ------- ---- ---------- ----- --------  ----
+    1098  Defl:N      449  59% 10-31-2017 19:27 f646c9c9  document.json
+     768  Defl:N      341  56% 10-31-2017 19:22 ca14f363  meta.json
+       0  Stored        0   0% 10-31-2017 19:31 00000000  pages/
+       0  Stored        0   0% 10-31-2017 19:13 00000000  previews/
+     205  Defl:N      162  21% 10-31-2017 19:35 708a4b19  user.json
+--------          -------  ---                            -------
+    2071              952  54%                            5 files
+```
+
 ## Outro
 
 **Thanks TNT Edition <3**
