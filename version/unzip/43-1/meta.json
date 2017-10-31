@@ -1,1 +1,33 @@
-{"commit":"335a30073fcb2dc64a0abd6148ae147d694c887d","appVersion":"43.1","build":39012,"app":"com.bohemiancoding.sketch3","pagesAndArtboards":{"18D1FD02-FD9D-495C-A553-F174B9C89228":{"name":"Page 1","artboards":{"CF258A4E-74BC-4115-96DF-07E34704D6ED":{"name":"Artboard_Sketch_43.1"}}}},"fonts":[],"created":{"app":"com.bohemiancoding.sketch3","commit":"335a30073fcb2dc64a0abd6148ae147d694c887d","build":39012,"appVersion":"43.1","variant":"NONAPPSTORE","version":88},"version":88,"saveHistory":["NONAPPSTORE.39012"],"autosaved":0,"variant":"NONAPPSTORE"}
+{  
+   "commit":"335a30073fcb2dc64a0abd6148ae147d694c887d",
+   "appVersion":"43.1",
+   "build":39012,
+   "app":"com.bohemiancoding.sketch3",
+   "pagesAndArtboards":{  
+      "18D1FD02-FD9D-495C-A553-F174B9C89228":{  
+         "name":"Page 1",
+         "artboards":{  
+            "CF258A4E-74BC-4115-96DF-07E34704D6ED":{  
+               "name":"Artboard_Sketch_43.1"
+            }
+         }
+      }
+   },
+   "fonts":[  
+
+   ],
+   "created":{  
+      "app":"com.bohemiancoding.sketch3",
+      "commit":"335a30073fcb2dc64a0abd6148ae147d694c887d",
+      "build":39012,
+      "appVersion":"43.1",
+      "variant":"NONAPPSTORE",
+      "version":88
+   },
+   "version":88,
+   "saveHistory":[  
+      "NONAPPSTORE.39012"
+   ],
+   "autosaved":0,
+   "variant":"NONAPPSTORE"
+}
