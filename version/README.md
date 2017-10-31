@@ -196,6 +196,60 @@ Archive:  43-1zip.sketch
     2071              952  54%                            5 files
 ```
 
+With a bit of zipinfo we can get more information related to zip archive, please
+refer to [this](http://en.wikipedia.org/wiki/Infozip) documentation for more commands.
+
+```
+$ zipinfo version/blob43-1.sketch
+
+Archive:  version/blob43-1.sketch
+Zip file size: 5661 bytes, number of entries: 5
+-rw----     0.0 fat      788 t- defX 80-000-00 00:00 document.json
+-rw----     0.0 fat     1709 t- defX 80-000-00 00:00 pages/18D1FD02-FD9D-495C-A553-F174B9C89228.json
+-rw----     0.0 fat      166 t- defX 80-000-00 00:00 user.json
+-rw----     0.0 fat      554 t- defX 80-000-00 00:00 meta.json
+-rw----     0.0 fat     3678 b- defN 80-000-00 00:00 previews/preview.png
+5 files, 6895 bytes uncompressed, 5063 bytes compressed:  26.6%
+```
+
+So to properly compile we have to:
+
+* Minify data
+* Zip to proper archive 
+
+**Our build script:**
+
+```sh
+#!/bin/sh
+# minifies pretty json, compresses .sketch format
+# ./build folder 
+
+# get files
+FILES=./$1/pages/*
+FILES+=" ./$1/document.json ./$1/meta.json"
+
+# minify
+echo $FILES
+for f in $FILES
+do
+  echo "minifying $f"
+  json-minify $f > ./temp.json
+  cat ./temp.json > $f
+done
+
+# zip
+ditto -c -k --sequesterRsrc ./$1 $1.sketch
+
+rm ./temp.json
+```
+
 ## Outro
 
 **Thanks TNT Edition <3**
+
+## Resoruces
+
+* https://badootech.badoo.com/translating-interfaces-into-almost-fifty-languages-sketch-dc196cf23ee5
+* http://sketchplugins.com/d/87-new-file-format-in-sketch-43/106
+* https://developer.apple.com/legacy/library/documentation/Darwin/Reference/ManPages/man1/ditto.1.html
+* https://www.npmjs.com/package/json-minify
