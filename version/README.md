@@ -14,3 +14,16 @@ Some resource may be found on interwebz about this file and these are referenced
 at the end of the file.
 
 ## File
+
+Lets start from the root of the problem, what excatly is `*.sketch`.
+  
+```sh
+$ file version/blob43-1.sketch
+version/blob43-1.sketch: Zip archive data, at least v2.0 to extract
+```
+
+Oh, great. So it's a typical ZIP format. Interesting thing is most of the files
+are compressed in one way or another. A lot of times while reversing stuff or
+application tree you will see ziparcs.
+  
+
